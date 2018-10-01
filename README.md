@@ -29,7 +29,7 @@ The source.json file should contain a list with english texts that you want tran
 ]
 
 ```
-This is a JSON file and not a js file, and must thus use double quots and no trailing commas.
+This is a JSON file and not a js file, and must thus use double quotes and no trailing commas.
 
 ### Result ###
 

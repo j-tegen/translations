@@ -6,6 +6,7 @@ import json
 client = translate.Client()
 
 SOURCE_FILE_NAME = 'source.json'
+TARGET_FILE_NAME = 'results.json'
 
 TARGETS = [
     'sv',
@@ -49,7 +50,7 @@ def translate_texts():
                 translations['%s' %(key)] = result
             results['%s' %(target)] = translations
 
-        with io.open('results.json'.format(target), 'w', encoding='utf8') as output:
+        with io.open(TARGET_FILE_NAME, 'w', encoding='utf8') as output:
             json.dump(results, output, ensure_ascii=False)
 
 
